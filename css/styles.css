@@ -1,0 +1,81 @@
+html, body{
+    height: 100vh;
+}
+
+body{
+    background: #8d8484;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #212c41;
+    color: white;
+}
+
+button{
+    padding: 16px 32px;
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,0.5);
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover{
+    opacity: .7;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.turns{
+    background-color: rgba(255,255,255,0.2);
+    padding: 12px 24px;
+    border-radius: 5px;
+    margin-bottom: 24px;
+}
+
+.time-container{
+    position: relative;
+}
+
+.time{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    font-size: 50px;
+}
+
+.time-mode{
+    padding: 32px;
+    font-size: 20px;
+}
+
+.circle-container{
+    transform: rotate(-90deg);
+}
+
+.background-circle, .circle{
+    r: 95;
+    cx: 100;
+    cy: 100;
+    fill: none;
+}
+
+.background-circle{
+    stroke: rgba(255,255,255,0.6);
+    stroke-width: 2;
+}
+
+.circle{
+    
+    stroke: rgba(236, 135, 18, 0.9);
+    stroke-width: 8;
+    stroke-dashoffset: var(--dash-offset, 0);
+    stroke-dasharray: 598;
+    transition: stroke-dashoffset 1s linear;
+}

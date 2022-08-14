@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Pomodoro</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="main">
+
+        <div class="turns">1/4</div>
+
+        <div class="time-container">
+            <svg width="200" height="200" class="circle-container">
+                <circle class="background-circle"/>
+                <circle class="circle"/>
+            </svg>
+    
+            <div class="time">00:00</div>
+        </div>
+
+        <div class="time-mode">Studies</div>
+
+        <div class="group-buttons">
+            <button class="timer-control">Start</button>
+            <button class="reset-button">Restart</button>
+        </div>
+        
+    </div>
+
+    <!-- song of notification -->
+    <audio id="notification">
+        <source src="./assets/notification.mp3">
+    </audio>
+    
+    <script src="./javascript/index.js"></script>
+</body>
+</html>
